@@ -1,0 +1,41 @@
+# version format
+version: 0.0.{build}
+# branches to build
+branches:
+  only:
+    - master
+# Maximum number of concurrent jobs for the project
+max_jobs: 1
+image: ubuntu-18.04-amd64
+install:
+  - sh: npm install
+artifacts:
+  - path: controllers
+  - path: models
+  - path: routes
+  - path: helper
+  - path: test
+  - path: web
+  - path: '*.js'
+  - path: docker-compose.yml
+  - path: .dockerignore
+  - path: Dockerfile
+  - path: package.json
+  - path: config.json
+deploy:
+  - provider: FTP
+    host: 160.85.252.71
+    protocol: sftp
+    username: ftpuser
+    password:
+      secure: rRO7NUHCM+0ViqDgax6hIw==
+    folder: Appveyor
+
+#build_script:
+#  - docker-compose up
+#
+#test_script:
+#  - npm test
+#
+#on_finish:
+#  - echo "Upload the test reports"

@@ -1,0 +1,18 @@
+version: "3"
+services:
+  dd-backend:
+    container_name: dd-backend
+    build: ./
+    volumes:
+      - ../log.txt:/mnt/log.txt
+      - ../images:/usr/src/app/public/uploads
+    ports: ["8080:8080"]
+    links: [mongo]
+  mongo:
+    container_name: mongo
+    command: [--auth]
+    image: mongo
+    volumes:
+      - /data/db
+    ports: ["27017:27017"]
+

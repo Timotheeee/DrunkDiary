@@ -1,0 +1,1 @@
+This file is only a placeholder for where the real server's log is on the VM.

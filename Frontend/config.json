@@ -1,0 +1,6 @@
+{
+  "server": "http://160.85.252.71:8080",
+  "apiUser": "/api/user",
+  "apiPin": "/api/pin",
+  "imagePath": "/images/"
+}
