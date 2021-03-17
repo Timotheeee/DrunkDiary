@@ -1,13 +1,5 @@
 # DrunkDiary
 
-## Teamorganisation
-Product owner: Newroz Gilgil
-
-Scrum master: Tim Haag
-
-Protokollführer: Pascal Schmid
-
-
 # Installation Guide
 ##### Prerequisites:
 
@@ -45,7 +37,5 @@ run this two commands in the terminal of Intellij:
 
 After it is started up, it opens a browser window for expo. 
 Scan the shown QR Code with your Expo app on the phone.
-
-Hurra :D the App loads on your phone and will open after.
 
 PS: For Expo to work, if you're not in the same network with your PC & phone you need to activate tunnel connection.
